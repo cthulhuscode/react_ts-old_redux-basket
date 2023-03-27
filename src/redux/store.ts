@@ -1,7 +1,11 @@
-import { createStore } from "redux";
+import { createStore, applyMiddleware } from "redux";
+import { composeWithDevTools } from "redux-devtools-extension";
 import { basketReducer } from "./reducers/basketReducer";
 
-export const store = createStore(basketReducer);
+export const store = createStore(
+  basketReducer,
+  composeWithDevTools(applyMiddleware())
+);
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
 export type RootState = ReturnType<typeof store.getState>;
