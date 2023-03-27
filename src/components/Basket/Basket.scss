@@ -1,0 +1,53 @@
+.basket {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__form {
+    margin-top: 50px;
+
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__label {
+    font-size: 18px;
+  }
+
+  &__input {
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  &__btn {
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    height: 35px;
+    background-color: #00b13b;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+
+    &:hover {
+      background-color: #00a035;
+    }
+  }
+
+  &__list {
+    width: 300px;
+    margin-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+  }
+}
